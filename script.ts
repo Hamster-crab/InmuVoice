@@ -4,13 +4,13 @@
 //     audioElement.play(); //クリックしたら音を再生
 // }
 
-function YJYarimasune() :void {
-    // 乱数生成
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-    }
-    let Random = getRandomInt(2);
+// 乱数生成
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+let Random = getRandomInt(2);
 
+function YJYarimasune() :void {
     // Main
     if (Random >= 1) {
     const audioElement = document.getElementById('YJYarimasune_audio') as HTMLAudioElement;

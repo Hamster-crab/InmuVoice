@@ -3,12 +3,12 @@
 //     audioElement.currentTime = 0; //連続クリックに対応
 //     audioElement.play(); //クリックしたら音を再生
 // }
+// 乱数生成
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
+var Random = getRandomInt(2);
 function YJYarimasune() {
-    // 乱数生成
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-    }
-    var Random = getRandomInt(2);
     // Main
     if (Random >= 1) {
         var audioElement = document.getElementById('YJYarimasune_audio');
